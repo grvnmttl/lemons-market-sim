@@ -241,6 +241,7 @@ def experiment_1(p: Params, outdir: Path):
                  fontsize=12)
     fig.tight_layout(rect=(0, 0, 1, 0.96))
     fig.savefig(outdir / "fig1_collapse_vs_separation.png", dpi=150)
+    fig.savefig(outdir / "fig1_collapse_vs_separation.pdf")  # vector, for LaTeX/arXiv
     plt.close(fig)
 
     # write timeseries (means)
@@ -286,6 +287,7 @@ def experiment_2(p: Params, outdir: Path):
     ax.legend(loc="center left", fontsize=9)
     fig.tight_layout()
     fig.savefig(outdir / "fig2_threshold.png", dpi=150)
+    fig.savefig(outdir / "fig2_threshold.pdf")  # vector, for LaTeX/arXiv
     plt.close(fig)
 
     with open(outdir / "threshold.csv", "w", newline="") as f:
@@ -325,6 +327,7 @@ def experiment_3(p: Params, faith, trust, outdir: Path):
     ax.legend(fontsize=9)
     fig.tight_layout()
     fig.savefig(outdir / "fig3_chain_depth.png", dpi=150)
+    fig.savefig(outdir / "fig3_chain_depth.pdf")  # vector, for LaTeX/arXiv
     plt.close(fig)
 
     with open(outdir / "composition.csv", "w", newline="") as f:

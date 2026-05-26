@@ -1,0 +1,39 @@
+{
+  "params": {
+    "r_L": 0.55,
+    "r_H": 0.92,
+    "c_H": 0.02,
+    "kappa_lo": 0.0,
+    "kappa_hi": 0.6,
+    "N": 2000,
+    "T": 300,
+    "S": 24,
+    "revision_rate": 0.3,
+    "mutation": 0.005,
+    "init_invest_frac": 0.5,
+    "master_seed": 20260523
+  },
+  "overclaim_gain_g": 0.37,
+  "E1_steady_state": {
+    "faith_reliability": 0.5538102783517047,
+    "faith_overclaim_frac": 0.4955855555555556,
+    "faith_invested_frac": 0.008114722222222223,
+    "trust_reliability": 0.9173580898619904,
+    "trust_overclaim_frac": 0.004133055555555556,
+    "trust_invested_frac": 0.5790019444444445
+  },
+  "E2_threshold": {
+    "reliability_at_c_below_g": 0.6526151361090907,
+    "reliability_at_c_eq_g": 0.9173580898619904,
+    "reliability_at_c_above_g": 0.9173580898619904,
+    "overclaim_at_c_below_g": 0.7167919444444445,
+    "overclaim_at_c_above_g": 0.004133055555555556
+  },
+  "E3_chain_depth": {
+    "per_hop_faith": 0.5538102783517047,
+    "per_hop_trust": 0.9173580898619904,
+    "per_hop_trust_verified": 0.9586790449309952,
+    "e2e_depth5_faith": 0.052096081526284733,
+    "e2e_depth5_trust_verified": 0.809778371108904
+  }
+}
